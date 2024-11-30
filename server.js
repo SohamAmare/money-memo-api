@@ -22,6 +22,7 @@ app.use(
       "https://money-memo-frontend.vercel.app/",
       "https://money-memo-frontend.vercel.app",
       "http://localhost:5173/",
+      "http://localhost:5173",
     ], // Allow frontend
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
