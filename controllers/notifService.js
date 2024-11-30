@@ -116,8 +116,8 @@ const sendSmsNotification = async (to, message) => {
   try {
     const messageResponse = await client.messages.create({
       body: message, // The message content
-      from: "+15865719171", // Replace with your Twilio number
-      to: "+917045054597", // The user's phone number
+      from: process.env.TWILIO_PHONE_NUMBER, // Replace with your Twilio number
+      to: process.env.MY_PHONE, // The user's phone number
     });
     console.log(`Message sent: ${messageResponse.sid}`);
   } catch (error) {
