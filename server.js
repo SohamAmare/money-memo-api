@@ -2,14 +2,13 @@
 
 const express = require("express");
 const dotenv = require("dotenv");
+require("dotenv").config();
 const cors = require("cors");
 const connectDB = require("./utils/connect");
 const UserRoute = require("./routes/UserRoute");
 const ChartRoute = require("./routes/expenseNotifRoute");
 const expenseNotifRoute = require("./routes/expenseNotifRoute");
 const TrackerRouteShivam = require("./routes/trackerRouteShivam");
-
-require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
